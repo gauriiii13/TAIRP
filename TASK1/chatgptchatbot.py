@@ -1,8 +1,7 @@
 import openai
 import streamlit as st
-import os
 
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = st.secrets("API_KEY")
 
 messages = [{"role": "system", "content": "You are a psychologist"}]
 
