@@ -22,7 +22,7 @@ def main():
     
     if st.button("Send"):
         response = CustomChatGPT(user_input)
-        st.text_area("Psychologist:", response)
+        st.text_area("Psychologist:", response, height=200)
     
 if __name__ == "__main__":
     main()
