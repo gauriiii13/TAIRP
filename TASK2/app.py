@@ -7,7 +7,7 @@ from keras.models import load_model
 from streamlit_drawable_canvas import st_canvas
 
 # Load the trained CNN model
-model = load_model('TAIRP/blob/main/TASK2/Model.h5')
+model = load_model('TASK2/Model.h5')
 
 # Function to preprocess the input image
 def preprocess_image(image):
