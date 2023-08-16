@@ -4,7 +4,6 @@ import cv2
 import tensorflow
 from tensorflow import keras
 from keras.models import load_model
-from streamlit import streamlit_drawable_canvas
 from streamlit_drawable_canvas import st_canvas
 
 # Load the trained CNN model
