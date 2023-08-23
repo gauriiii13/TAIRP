@@ -30,7 +30,9 @@ canvas = st_canvas(
     drawing_mode="freedraw"
 )
 
-if canvas.image_data:
+predict_button = st.button("Predict")
+
+if predict_button:
     # Preprocess the canvas drawing and make a prediction
     preprocessed_image = preprocess_image(canvas.image_data)
     prediction = model.predict(preprocessed_image)
