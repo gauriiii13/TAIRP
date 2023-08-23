@@ -30,7 +30,7 @@ canvas = st_canvas(
     drawing_mode="freedraw"
 )
 
-if canvas.image_data is not None and canvas.image_data.sum() > 0:
+if canvas.image_data is not None:
     # Preprocess the canvas drawing and make a prediction
     preprocessed_image = preprocess_image(canvas.image_data)
     prediction = model.predict(preprocessed_image)
